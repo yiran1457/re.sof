@@ -19,8 +19,9 @@ public class SecretsOfForging {
     public static final String MODID = "secrets_of_forging";
     public IEventBus EVENTBUS;
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TetraMod.MOD_ID);
-    public SecretsOfForging(FMLJavaModLoadingContext context) {
-        EVENTBUS = context.getModEventBus();
+    public SecretsOfForging() {
+
+        EVENTBUS = FMLJavaModLoadingContext.get().getModEventBus();
         ITEMS.register(EVENTBUS);
         ITEMS.register(ModularPolearm.identifier, ModularPolearm::new);
 

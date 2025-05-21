@@ -37,7 +37,7 @@
             },
             "models": [
                 {
-                    "location": "tetra:items/module/polearm/binding/binding/bolt",
+                    "location": "tetra:item/module/polearm/binding/binding/bolt",
                     "tint": "bolt"
                 }
             ]
